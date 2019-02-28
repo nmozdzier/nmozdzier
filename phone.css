@@ -3,7 +3,6 @@ body{
 	font-family: sans-serif;
 	color: black;
 	text-align: left;
-	font-size:150%
 }
 
 h1{
@@ -11,8 +10,7 @@ h1{
 	font-family: sans-serif;
 	color: black;
 	width: 480px;
-	text-align: left;
-	font-size:175%;
+	text-align: center;
 }
 
 input[type=button]{
