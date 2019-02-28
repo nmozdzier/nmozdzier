@@ -2,7 +2,8 @@ body{
 	background-color:white;
 	font-family: sans-serif;
 	color: black;
-	text-align: left;
+	text-align: center;
+	font-size:150%;
 }
 
 h1{
@@ -23,6 +24,8 @@ input[type=button]{
 	padding-top: 10px;
 	padding-bottom: 10px;
 	width: 328px;
+	text-align:center;
+	font-size: 150%;
 }
 
 input[type=number]{
@@ -33,6 +36,7 @@ input[type=number]{
 	padding-top: 10px;
 	padding-bottom: 10px;
 	width:150px;
+	font-size:150%;
 }
 
 #measurementType{
@@ -44,6 +48,7 @@ input[type=number]{
 	padding-top: 9px;
 	padding-bottom: 9px;
 	width: 328px;
+	font-size:150%;
 }
 
 
@@ -56,6 +61,7 @@ input[type=number]{
 	padding-top: 9px;
 	padding-bottom: 9px;
 	width:150px;
+	font-size:150%;
 }
 
 input[type=button]:hover{
@@ -69,6 +75,7 @@ input[type=button]:hover{
 	padding-bottom: 10px;
 	transition-duration: 0.4s;
 	width:328px;
+	font-size:150%;
 }
 
 p{
