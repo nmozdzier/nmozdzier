@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="phone.css">
+<link rel="stylesheet" href="desktop.css">
+<title>Unit Converter</title>
+</head>
+<body>
+
+<h1>Unit Converter</h1>
+
+<script src="converter_functions.js">
+
+</script>
+<p>What are you measuring?</p>
+<select onchange="revealOptions(document.getElementById('measurementType').value)" id="measurementType" class="specialSelect">
+	<option selected id="initial" value="initial">Select Measurement Type</option>
+	<option value="temperature">Temperature</option>
+	<option value="length">Length</option>
+	<option value="mass">Mass</option>
+</select>
+
+<br> <br>
+<p>Select your starting unit:</p>
+<select class="options" id="unitOptionsA">
+	<option selected id="initialA value="initial">Select Unit</option>
+	<option disabled id="fahrenheitA" value="fahrenheit">Fahrenheit</option>
+	<option disabled id="celsiusA" value="celsius">Celsius</option>
+	<option disabled id="kelvinA" value="kelvin">Kelvin</option>
+	<option disabled id="feetA" value="feet">Feet</option>
+	<option disabled id="inchesA" value="inches">Inches</option>
+	<option disabled id="yardsA" value="yards">Yards</option>
+	<option disabled id="poundsA" value="pounds">Pounds</option>
+	<option disabled id="ouncesA" value="ounces">Ounces</option>
+	<option disabled id="gramsA" value="grams">Grams</option>
+</select>
+<input type="number" autocomplete="off" id="inputA" rows="1" oninput="converterHandler(document.getElementById('measurementType').value, document.getElementById('unitOptionsA').value, document.getElementById('unitOptionsB').value, document.getElementById('inputA').value, document.getElementById('inputB').value)">
+<br>
+<br>
+<p>Select the unit you are converting to:</p>
+<select class="options id="unitOptionsB">
+	<option selected id="initialB" value="initial">Select Unit</option>
+	<option disabled id="fahrenheitB" value="fahrenheit">Fahrenheit</option>
+	<option disabled id="celsiusB" value="celsius">Celsius</option>
+	<option disabled id="kelvinB" value="kelvin">Kelvin</option>
+	<option disabled id="feetB" value="feet">Feet</option>
+	<option disabled id="inchesB" value="inches">Inches</option>
+	<option disabled id="yardsB" value="yards">Yards</option>
+	<option disabled id="poundsB" value="pounds">Pounds</option>
+	<option disabled id="ouncesB" value="ounces">Ounces</option>
+	<option disabled id="gramsB" value="grams">Grams</option>
+</select>
+<input disabled type="number" id="inputB" value=0 rows="1" oninput="converterHandler(document.getElementById('measurementType').value, document.getElementById('unitOptionsA').value, document.getElementById('unitOptionsB').value, document.getElementById('inputA').value, document.getElementById('inputB').value)">
+<br>
+<br>
+<input type="button" onclick="location.href=location.href" value="Reset">
+
+</body>
+</html>
